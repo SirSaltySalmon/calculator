@@ -21,7 +21,11 @@ This program is also available on the Godot Plugin library.
 6. Enjoy
 
 ## Legal
-This project is made for recreational and educational purposes only. I do not make any money from this. I do not own the small audio snippet used; it was extracted from [Skrilla - Doot Doot (67)](https://www.youtube.com/watch?v=XnygT6ANLzQ). I also do not own the visual effects; it originated from CapCut.
+This project is made for recreational and educational purposes only. I do not make any money from this. I do not own:
+- The small audio snippet used; it was extracted from [Skrilla - Doot Doot (67)](https://www.youtube.com/watch?v=XnygT6ANLzQ)
+- The visual effects; it originated from CapCut.
+- The artwork of Albert Einstein and Nikola Tesla by Jason Seiler
+However, the source code of this file is free for any use with attribution. Subject to MIT License. See LICENSE for more details.
 
 ## Can I support you?
 You can always send a donation here: https://ko-fi.com/sirsalmon

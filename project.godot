@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="calculator"
-run/main_scene="res://main.tscn"
+run/main_scene="uid://byra6wtgt13ln"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://b0564xoa2q1s4"
 config/windows_native_icon="res://icon.ico"

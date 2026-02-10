@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://byra6wtgt13ln"]
 
-[ext_resource type="Script" uid="uid://d27amq2255vr7" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="Script" uid="uid://gj2l6s7e0igh" path="res://input_button.gd" id="1_ig7tw"]
-[ext_resource type="AudioStream" uid="uid://dwu4irlvdu7fw" path="res://effects/67.mp3" id="2_7mycd"]
-[ext_resource type="Script" uid="uid://df1d66yllcqhf" path="res://equal_button.gd" id="3_1bvp3"]
-[ext_resource type="VideoStream" uid="uid://crf8nwo0ouj65" path="res://effects/Sequence 01.ogv" id="3_272bh"]
-[ext_resource type="Script" uid="uid://ctbepp01u530u" path="res://delete_button.gd" id="3_lquwl"]
-[ext_resource type="Script" uid="uid://clr5qdgad4cvv" path="res://input.gd" id="4_272bh"]
-[ext_resource type="Texture2D" uid="uid://c2umhb14ycddv" path="res://effects/tesla_einstein.jpg" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://d27amq2255vr7" path="res://addons/calculator/main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://gj2l6s7e0igh" path="res://addons/calculator/input_button.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://dwu4irlvdu7fw" path="res://addons/calculator/effects/67.mp3" id="2_7mycd"]
+[ext_resource type="Script" uid="uid://df1d66yllcqhf" path="res://addons/calculator/equal_button.gd" id="3_1bvp3"]
+[ext_resource type="VideoStream" uid="uid://crf8nwo0ouj65" path="res://addons/calculator/effects/Sequence 01.ogv" id="3_272bh"]
+[ext_resource type="Script" uid="uid://ctbepp01u530u" path="res://addons/calculator/delete_button.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://clr5qdgad4cvv" path="res://addons/calculator/input.gd" id="4_272bh"]
+[ext_resource type="Texture2D" uid="uid://c2umhb14ycddv" path="res://addons/calculator/effects/tesla_einstein.jpg" id="8_5vw27"]
 
 [sub_resource type="Theme" id="Theme_7dm0k"]
 Button/font_sizes/font_size = 50

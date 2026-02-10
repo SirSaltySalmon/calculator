@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0564xoa2q1s4"
-path="res://.godot/imported/calculator_22175.png-e5df554112387cad8238e70ca1af85b8.ctex"
+path="res://.godot/imported/calculator_22175.png-f104a7a7afe0351af6c45de45eef887a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://calculator_22175.png"
-dest_files=["res://.godot/imported/calculator_22175.png-e5df554112387cad8238e70ca1af85b8.ctex"]
+source_file="res://addons/calculator/calculator_22175.png"
+dest_files=["res://.godot/imported/calculator_22175.png-f104a7a7afe0351af6c45de45eef887a.ctex"]
 
 [params]
 

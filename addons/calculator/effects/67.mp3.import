@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dwu4irlvdu7fw"
-path="res://.godot/imported/67.mp3-b187751c5df62c464d879076ee5742a0.mp3str"
+path="res://.godot/imported/67.mp3-08e3f8c3f197315d809f086944af46cf.mp3str"
 
 [deps]
 
-source_file="res://effects/67.mp3"
-dest_files=["res://.godot/imported/67.mp3-b187751c5df62c464d879076ee5742a0.mp3str"]
+source_file="res://addons/calculator/effects/67.mp3"
+dest_files=["res://.godot/imported/67.mp3-08e3f8c3f197315d809f086944af46cf.mp3str"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2umhb14ycddv"
-path="res://.godot/imported/tesla_einstein.jpg-ff97f5f275369997e98199538bd143e5.ctex"
+path="res://.godot/imported/tesla_einstein.jpg-f0b502869c7f6aae3138262efbaab0bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://effects/tesla_einstein.jpg"
-dest_files=["res://.godot/imported/tesla_einstein.jpg-ff97f5f275369997e98199538bd143e5.ctex"]
+source_file="res://addons/calculator/effects/tesla_einstein.jpg"
+dest_files=["res://.godot/imported/tesla_einstein.jpg-f0b502869c7f6aae3138262efbaab0bf.ctex"]
 
 [params]
 

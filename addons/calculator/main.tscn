@@ -1,0 +1,276 @@
+[gd_scene load_steps=10 format=3 uid="uid://byra6wtgt13ln"]
+
+[ext_resource type="Script" uid="uid://d27amq2255vr7" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://gj2l6s7e0igh" path="res://input_button.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://dwu4irlvdu7fw" path="res://effects/67.mp3" id="2_7mycd"]
+[ext_resource type="Script" uid="uid://df1d66yllcqhf" path="res://equal_button.gd" id="3_1bvp3"]
+[ext_resource type="VideoStream" uid="uid://crf8nwo0ouj65" path="res://effects/Sequence 01.ogv" id="3_272bh"]
+[ext_resource type="Script" uid="uid://ctbepp01u530u" path="res://delete_button.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://clr5qdgad4cvv" path="res://input.gd" id="4_272bh"]
+[ext_resource type="Texture2D" uid="uid://c2umhb14ycddv" path="res://effects/tesla_einstein.jpg" id="8_5vw27"]
+
+[sub_resource type="Theme" id="Theme_7dm0k"]
+Button/font_sizes/font_size = 50
+
+[node name="Calculator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h2yge")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7mycd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8, 1.8)
+stream = ExtResource("3_272bh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = -236.0
+offset_right = 2539.0
+offset_bottom = 1444.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_5vw27")
+
+[node name="Error" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -211.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+text = "uwu u've made an ewwor!!!"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.06
+grow_horizontal = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
+
+[node name="Answer" type="RichTextLabel" parent="MarginContainer"]
+layout_mode = 2
+focus_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 0.705882)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "0"
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.06
+anchor_right = 1.0
+anchor_bottom = 0.172
+offset_bottom = 0.399994
+grow_horizontal = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
+
+[node name="Input" type="LineEdit" parent="MarginContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "0"
+keep_editing_on_text_submit = true
+clear_button_enabled = true
+caret_blink = true
+script = ExtResource("4_272bh")
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.179
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.199997
+grow_horizontal = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.18
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_7dm0k")
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "9"
+script = ExtResource("1_ig7tw")
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "6"
+script = ExtResource("1_ig7tw")
+
+[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "3"
+script = ExtResource("1_ig7tw")
+
+[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "."
+script = ExtResource("1_ig7tw")
+
+[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "("
+script = ExtResource("1_ig7tw")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "8"
+script = ExtResource("1_ig7tw")
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "5"
+script = ExtResource("1_ig7tw")
+
+[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "2"
+script = ExtResource("1_ig7tw")
+
+[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "0"
+script = ExtResource("1_ig7tw")
+
+[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = ")"
+script = ExtResource("1_ig7tw")
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "7"
+script = ExtResource("1_ig7tw")
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "4"
+script = ExtResource("1_ig7tw")
+
+[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "1"
+script = ExtResource("1_ig7tw")
+
+[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "="
+script = ExtResource("3_1bvp3")
+
+[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Del"
+script = ExtResource("3_lquwl")
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "+"
+script = ExtResource("1_ig7tw")
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "-"
+script = ExtResource("1_ig7tw")
+
+[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "*"
+script = ExtResource("1_ig7tw")
+
+[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "/"
+script = ExtResource("1_ig7tw")
+
+[node name="Button5" type="Button" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Ans"
+script = ExtResource("1_ig7tw")
